@@ -1,0 +1,4 @@
+"dba" "<SET_dba_USER_PASSWORD_HERE>"
+"replicator" "<SET_replicator_USER_PASSWORD_HERE>"
+"rewind" "<SET_rewind_USER_PASSWORD_HERE>"
+"postgres" "<SET_postgres_USER_PASSWORD_HERE>"

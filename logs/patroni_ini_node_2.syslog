@@ -1,0 +1,16 @@
+Jun 13 17:13:10 node2 patroni[6129]: 2023-06-13 17:13:10,504 INFO: Selected new etcd server http://node0.ru-central1.internal:2379
+Jun 13 17:13:10 node2 patroni[6129]: 2023-06-13 17:13:10,515 INFO: No PostgreSQL configuration items changed, nothing to reload.
+Jun 13 17:13:10 node2 patroni[6129]: 2023-06-13 17:13:10,532 INFO: Lock owner: node0; I am node2
+Jun 13 17:13:10 node2 patroni[6129]: 2023-06-13 17:13:10,542 INFO: trying to bootstrap from leader 'node0'
+Jun 13 17:13:17 node2 patroni[6129]: 2023-06-13 17:13:17,310 INFO: replica has been created using basebackup
+Jun 13 17:13:17 node2 patroni[6129]: 2023-06-13 17:13:17,311 INFO: bootstrapped from leader 'node0'
+Jun 13 17:13:17 node2 patroni[6129]: 2023-06-13 17:13:17,445 INFO: postmaster pid=6144
+Jun 13 17:13:17 node2 patroni[6145]: localhost:5432 - no response
+Jun 13 17:13:17 node2 patroni[6144]: 2023-06-13 17:13:17.454 UTC [6144] LOG:  redirecting log output to logging collector process
+Jun 13 17:13:17 node2 patroni[6144]: 2023-06-13 17:13:17.454 UTC [6144] HINT:  Future log output will appear in directory "/var/log/postgresql".
+Jun 13 17:13:18 node2 patroni[6152]: localhost:5432 - accepting connections
+Jun 13 17:13:18 node2 patroni[6154]: localhost:5432 - accepting connections
+Jun 13 17:13:18 node2 patroni[6129]: 2023-06-13 17:13:18,484 INFO: Lock owner: node0; I am node2
+Jun 13 17:13:18 node2 patroni[6129]: 2023-06-13 17:13:18,484 INFO: establishing a new patroni connection to the postgres cluster
+Jun 13 17:13:18 node2 patroni[6129]: 2023-06-13 17:13:18,954 INFO: no action. I am (node2), a secondary, and following a leader (node0)
+Jun 13 17:13:21 node2 patroni[6129]: 2023-06-13 17:13:21,822 INFO: no action. I am (node2), a secondary, and following a leader (node0)

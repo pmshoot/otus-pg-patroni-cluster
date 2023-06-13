@@ -1,0 +1,43 @@
+Jun 13 16:45:11 node0 patroni[8946]: 2023-06-13 16:45:11,061 INFO: Selected new etcd server http://node1.ru-central1.internal:2379
+Jun 13 16:45:11 node0 patroni[8946]: 2023-06-13 16:45:11,072 INFO: No PostgreSQL configuration items changed, nothing to reload.
+Jun 13 16:45:11 node0 patroni[8946]: 2023-06-13 16:45:11,094 INFO: Lock owner: None; I am node0
+Jun 13 16:45:11 node0 patroni[8946]: 2023-06-13 16:45:11,119 INFO: waiting for leader to bootstrap
+Jun 13 16:45:21 node0 systemd[1]: patroni.service: Deactivated successfully.
+Jun 13 16:45:36 node0 patroni[8972]: 2023-06-13 16:45:36,518 INFO: Selected new etcd server http://node2.ru-central1.internal:2379
+Jun 13 16:45:36 node0 patroni[8972]: 2023-06-13 16:45:36,530 INFO: No PostgreSQL configuration items changed, nothing to reload.
+Jun 13 16:45:36 node0 patroni[8972]: 2023-06-13 16:45:36,547 INFO: Lock owner: None; I am node0
+Jun 13 16:45:36 node0 patroni[8972]: 2023-06-13 16:45:36,569 INFO: trying to bootstrap a new cluster
+Jun 13 16:45:36 node0 patroni[8983]: The files belonging to this database system will be owned by user "postgres".
+Jun 13 16:45:36 node0 patroni[8983]: This user must also own the server process.
+Jun 13 16:45:36 node0 patroni[8983]: The database cluster will be initialized with locale "en_US.UTF-8".
+Jun 13 16:45:36 node0 patroni[8983]: The default text search configuration will be set to "english".
+Jun 13 16:45:36 node0 patroni[8983]: Data page checksums are disabled.
+Jun 13 16:45:36 node0 patroni[8983]: creating directory /var/lib/postgresql/14/main ... ok
+Jun 13 16:45:36 node0 patroni[8983]: creating subdirectories ... ok
+Jun 13 16:45:36 node0 patroni[8983]: selecting dynamic shared memory implementation ... posix
+Jun 13 16:45:36 node0 patroni[8983]: selecting default max_connections ... 100
+Jun 13 16:45:36 node0 patroni[8983]: selecting default shared_buffers ... 128MB
+Jun 13 16:45:36 node0 patroni[8983]: selecting default time zone ... Etc/UTC
+Jun 13 16:45:36 node0 patroni[8983]: creating configuration files ... ok
+Jun 13 16:45:36 node0 patroni[8983]: running bootstrap script ... ok
+Jun 13 16:45:37 node0 patroni[8983]: performing post-bootstrap initialization ... ok
+Jun 13 16:45:40 node0 patroni[8983]: syncing data to disk ... ok
+Jun 13 16:45:40 node0 patroni[8983]: initdb: warning: enabling "trust" authentication for local connections
+Jun 13 16:45:40 node0 patroni[8983]: You can change this by editing pg_hba.conf or using the option -A, or
+Jun 13 16:45:40 node0 patroni[8983]: --auth-local and --auth-host, the next time you run initdb.
+Jun 13 16:45:40 node0 patroni[8983]: Success. You can now start the database server using:
+Jun 13 16:45:40 node0 patroni[8983]:     /usr/lib/postgresql/14/bin/pg_ctl -D /var/lib/postgresql/14/main -l logfile start
+Jun 13 16:45:40 node0 patroni[8972]: 2023-06-13 16:45:40,674 INFO: postmaster pid=9006
+Jun 13 16:45:40 node0 patroni[9007]: localhost:5432 - no response
+Jun 13 16:45:40 node0 patroni[9006]: 2023-06-13 16:45:40.679 UTC [9006] LOG:  redirecting log output to logging collector process
+Jun 13 16:45:40 node0 patroni[9006]: 2023-06-13 16:45:40.679 UTC [9006] HINT:  Future log output will appear in directory "/var/log/postgresql".
+Jun 13 16:45:41 node0 patroni[9016]: localhost:5432 - accepting connections
+Jun 13 16:45:41 node0 patroni[9018]: localhost:5432 - accepting connections
+Jun 13 16:45:41 node0 patroni[8972]: 2023-06-13 16:45:41,712 INFO: establishing a new patroni connection to the postgres cluster
+Jun 13 16:45:41 node0 patroni[8972]: 2023-06-13 16:45:41,739 INFO: running post_bootstrap
+Jun 13 16:45:41 node0 patroni[8972]: 2023-06-13 16:45:41,783 WARNING: Could not activate Linux watchdog device: "Can't open watchdog device: [Errno 2] No such file or directory: '/dev/watchdog'"
+Jun 13 16:45:41 node0 patroni[8972]: 2023-06-13 16:45:41,834 INFO: initialized a new cluster
+Jun 13 16:45:51 node0 patroni[8972]: 2023-06-13 16:45:51,819 INFO: no action. I am (node0), the leader with the lock
+Jun 13 16:46:01 node0 patroni[8972]: 2023-06-13 16:46:01,824 INFO: no action. I am (node0), the leader with the lock
+Jun 13 16:46:11 node0 patroni[8972]: 2023-06-13 16:46:11,803 INFO: no action. I am (node0), the leader with the lock
+Jun 13 16:46:21 node0 patroni[8972]: 2023-06-13 16:46:21,803 INFO: no action. I am (node0), the leader with the lock
