@@ -21,7 +21,7 @@ apt update && apt install -y postgresql etcd patroni pgbouncer python3-etcd3
 
 ## 3. Настройка основного ПО.
 
-**Etcd**
+### Etcd
 
 настройки **etcd** прописываем в файле `/etc/default/etcd` на каждой ноде:
 - node0@:[`/etc/default/etcd`](configs/etcd/etcd_node0.conf)
@@ -68,11 +68,11 @@ cluster is healthy
 
 Кластер DCS ETCd запущен и готов к работе
 
-**Postgresql**
+### Postgresql
 
 Настройка postgresql в данном случае полностью возлагается на patroni
 
-**Patroni**
+### Patroni
 
 настройки **patroni** прописываем в файле `/etc/patroni/config.yml` на каждой ноде:
 - node0@:[`/etc/patroni/config.yml`](configs/patroni/patroni_node0.conf)
@@ -202,7 +202,7 @@ Jun 13 17:21:41 node2 patroni[6129]: 2023-06-13 17:21:41,821 INFO: no action. I 
 Все три ноды кластера `patroni` введены в строй и запущены.
 
 
-**Pgbouncer**
+### Pgbouncer
 
 настройки **pgbouncer** прописываем в файле `/etc/pgbouncer/pgbouncer.ini` на каждой ноде:
 - node0@:[`/etc/pgbouncer/pgbouncer.ini`](configs/pgbouncer/pgbouncer_node0.conf)
@@ -263,7 +263,7 @@ postgres=# \l
 apt update && apt install -y haproxy
 ```
 
-**HAProxy**
+### HAProxy
 
 В данной реализации будем использовать упрощенную схему и разместим балансировщик только на одной ноде - `node0`. В идеале, балансировщик лучше установить на каждую ноду как на этой схеме:
 ![](https://github.com/vitabaks/postgresql_cluster/raw/master/images/TypeA.png)
@@ -349,7 +349,7 @@ postgres=#
 
 Попытка создания таблицы на реплике не увенчалась успехом, что и следовало ожидать. Также видно, что созданная таблица на мастере синхронизировалась на реплики.
 
-**Статистика**
+### Статистика
 
 Также, на порту 7000 балансировщика можно просмотреть статистику и состояние нод кластера:
 ![](pics/haproxy_stat.png)
